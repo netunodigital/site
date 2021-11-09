@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>netuno.digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c778252024.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="parallax.js-1.5.0/parallax.js"></script>
+	<meta charset="utf-8">
+  </head>
+  <body>
+      <div id="navbar">
+          <div class="content">
+          <div id="logo">
+              <img src="img/logo2.png" />
+          </div>
+          <div id="menu">
+              <a href="">Produto</a>
+              <a href="">Portfólio</a>
+              <a href="">Preço</a>
+              <a href="">Contato</a>
+          </div>
+        </div>
+      </div>
+      <section id="home">
+          <div class="content">
+              <h1>O SEU SITE FEITO A MÃO</h1>
+              <div class="line" style="background-color: #fff; width: 200px;"></div>
+              <div class="welcome">
+                  <p>Não apenas criamos seu site, proporcionamos uma experiência de outro planeta para seus clientes. Que tal embarcar nessa viagem com a gente?</p>
+              </div>
+              <div class="line" style="background-color: #fff; width: 200px;"></div>
+              <div class="btn-home">
+                  <div class="ball"><span>></span></div> <span>entre em contato</span>
+              </div>
+          </div>
+      </section>
+      <section id="pag-1">
+          <div class="content">
+                <div class="line" style="background-color: var(--main);"></div>
+                <h1>o que faz um site feito a mão ser melhor</h1>
+                <div class="line" style="background-color: var(--main);"></div>
+                <div class="balls">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front">
+                            <div class="line" style="background-color: #fff; width: 80px;"></div>
+                            <h2>Personalizado</h2>
+                            <div class="line" style="background-color: #fff; width: 80px;"></div>
+                          </div>
+                          <div class="flip-box-back">
+                            <h2>Um planeta pode ser de água ou ar. Grande ou pequeno. Seu site também merece ser único e exclusivo.</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flip-box">
+                          <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <div class="flip-box-front">
+                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
+                                  <h2>Adaptável</h2>
+                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
+                                  </div>
+                            </div>
+                            <div class="flip-box-back">
+                              <h2>Existem planetas em várias galáxias. Seu site pode se adaptar a smartphones e tablets.</h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                <div class="flip-box-front">
+                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
+                                  <h2>Rápido</h2>
+                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
+                                  </div>
+                              </div>
+                              <div class="flip-box-back">
+                                <h2>Netuno gira em torno do Sol a 5.430m/s. Seu site deve carregar em segundos para ser efetivo.</h2>
+                              </div>
+                            </div>
+                          </div>
+                </div>
+          </div>
+      </section>
+      <section id="ideal">
+          <div class="content">
+        <div class="line" style="background-color: #fff; width: 80px;"></div>
+          <h1>IDEAL PARA</h1>
+          <div class="line" style="background-color: #fff; width: 80px;"></div>
+          <div class="ideal">
+              <div class="item"><span></span>start-ups</div>
+              <div class="item"><span></span>negócios</div>
+              <div class="item"><span></span>freelancers</div>
+              <div class="item"><span></span>lojas</div>
+              <div class="item"><span></span>autônomos</div>
+              <div class="item"><span></span>academias</div>
+          </div>
+        </div>
+      </section>
+      <section id="pag-2">
+          <div class="content">
+                <div class="line" style="background-color: var(--main);"></div>
+                <h1>tudo o que seu site pode ser</h1>
+                <div class="line" style="background-color: var(--main);"></div>
+          </div>
+      </section>
+      <section id="responsivo">
+          <div class="content">
+            <div class="icon"> d</div>
+            <div class="text">
+              <h1>Site responsivo</h1>
+              <p>Sabe aquele site que você abre quando está na fila do banco? Ele te deixa mais nervoso do que a fila? Esqueça isso. Garanta um site completamente adaptável para tablets e smartphones. Tenha a melhor experiência em qualquer tela.</p>
+            </div>
+          </div>
+      </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+
+		$( document ).ready(function() {
+            if ($(window).scrollTop()<400) {$('.header').css("opacity", "1")}
+        });
+$(window).scroll(function() {
+
+            ScrollReveal({
+                reset: false, 
+                duaration: 2000,
+                distance: '100%',
+                opacity: 0,
+            });
+            var slideUp600 = {
+                origin: 'bottom',
+                delay: 600,
+            };
+            ScrollReveal().reveal('.slide-up-600', slideUp600);
+            var slideRight = {
+                origin: 'left',
+            };
+            var slideUp800 = {
+                origin: 'bottom',
+                delay: 800,
+            };
+            ScrollReveal().reveal('.slide-up-800', slideUp800);
+            var slideRight = {
+                origin: 'left',
+            };
+            ScrollReveal().reveal('.slide-right', slideRight);
+            var slideLeft = {
+                origin: 'right',
+            };
+            ScrollReveal().reveal('.slide-left', slideLeft);
+    </script>
+  </body>
+</html>
