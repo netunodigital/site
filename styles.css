@@ -58,7 +58,7 @@ h1 {
 }
 #home {
     background-color: black;
-    background-image: url("img/bg.jpeg");
+    background-image: url("img/bg.jpg");
     background-size: cover;
     background-position: center;
     height: 650px;
@@ -234,20 +234,40 @@ h1 {
 #responsivo {
     background-color: #000;
 }
-#responsivo .content {
+#redes {
+    background-color: #fff;
+    color: #000;
+}
+#redes p {
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+}
+.produto .content {
     display: flex;
 }
-#responsivo .content div {
+.produto .content div {
     width: 50%;
 }
-#responsivo .content .text h1 {
+.produto .content .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.produto .content .text h1 {
     margin: 0;
     text-transform: uppercase;
     font-size: 28px;
     text-align: left;
     font-weight: 700;
 }
-#responsivo .content .text p {
+.produto .content .text p {
     max-width: 430px;
     color: var(--text);
+}
+.produto .content .text div span {
+    background-color: var(--main);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
 }
