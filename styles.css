@@ -6,12 +6,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 body {
     margin: 0;
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
 }
 a {
     text-decoration: none;
@@ -25,34 +25,43 @@ h1 {
     margin: 0 0 40px;
 }
 #navbar {
-    padding: 20px;
+    padding: 13px;
     background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 65px;
+    top: 0
 }
 #navbar .content {
     margin: auto;
     padding: 0;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
+    max-width: 900px;
 }
 #navbar #logo {
     
 }
 #navbar #logo img {
-    width: 170px;
+    width: 145px;
 }
 #navbar #menu {
     display: flex;
 }
-#navbar #menu a {
+#navbar #menu span {
     margin: 10px;
     transition: color 0.2s;
+    font-size: 14px;
+    cursor: pointer;
 }
-#navbar #menu a:hover {
+#navbar #menu span:hover {
     color: var(--main);
 }
 .content {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     padding: 3rem;
     margin: auto;
 }
@@ -61,7 +70,8 @@ h1 {
     background-image: url("img/bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 650px;
+    height: 550px;
+    margin: 65px 0 0 0;
 }
 #home .content {
     display: flex;
@@ -103,7 +113,7 @@ h1 {
 #home .btn-home .ball span {
     transform: scaleY(1.5) scaleX(1.2);
     font-weight: 400;
-    margin: -3px 0 0 1px;
+    margin: -4px 0 0 2px;
 }
 #home .btn-home:hover {
     color: var(--main);
@@ -122,18 +132,23 @@ h1 {
     width: 100%;
     color: #000
 }
-#pag-1 h1 {
+#pag-1 h1,
+#pag-2 h1,
+#contato h1 {
     max-width: 550px;
     margin: 10px auto 10px;
+    line-height: 50px;
 }
 #pag-1 .balls {
     width: 100%;
     margin: 60px 0 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .flip-box {
     background-color: transparent;
+    margin: 20px;
     width: 300px;
     height: 300px;
     perspective: 10000px; /* Remove this if you don't want the 3D effect */
@@ -190,15 +205,14 @@ h1 {
       margin: 50px;
       font-weight: 400;
   }
-
-
 #ideal {
     background-color: #000;
 }
 #ideal h1 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     margin: 8px 0;
+
 }
 #ideal .ideal {
     width: 100%;
@@ -227,31 +241,41 @@ h1 {
     width: 100%;
     color: #000
 }
-#pag-2 h1 {
-    max-width: 550px;
-    margin: 10px auto 10px;
+.produto .content .icon img {
+    width: 100%;
+    max-width: 400px;
 }
-#responsivo {
+#responsivo, #analise {
     background-color: #000;
 }
-#redes {
+#redes, #cms {
     background-color: #fff;
     color: #000;
 }
-#redes p {
+#redes p, #cms p {
     color: rgb(29, 29, 29);
-    font-weight: 600;
+    font-weight: 500;
 }
+
 .produto .content {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
 }
 .produto .content div {
-    width: 50%;
+}
+.produto .content .icon {
+    width: calc(50% - 50px);
+    text-align: right;
+    margin-right: 50px;
 }
 .produto .content .text {
+    width: calc(50% - 30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 30px;
 }
 .produto .content .text h1 {
     margin: 0;
@@ -265,9 +289,410 @@ h1 {
     color: var(--text);
 }
 .produto .content .text div span {
-    background-color: var(--main);
     width: 10px;
     height: 10px;
     display: inline-block;
     border-radius: 100%;
 }
+#photo {
+    background-image: url("img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    filter: grayscale(100%);
+}
+#contato {
+    background-color: #fff;
+    width: 100%;
+    color: #000
+}
+#contato .content h1 {
+    color: #000;
+    width: 100%;
+}
+#funciona {
+    background-color: #000;
+    text-align: center;
+}
+#funciona h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 8px 0;
+
+}
+#funciona p {
+    margin: 40px 20px;
+}
+#funciona div span {
+    width: 30px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 0 20px;
+    font-weight: 600;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+#funciona .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 20px;
+    background-color: var(--main);
+    margin: 10px 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    font-size:15px;
+    text-align: center;
+    font-weight: 500;
+}
+#contato {
+    width: 100%;
+}
+#rodape {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#form, #dados {
+    background-color: #000;
+    display: flex;
+}
+#form {
+    margin: 0 5px 0 0;
+    justify-content: flex-end;
+    width: calc(60% - 5px);
+}
+#dados {
+    margin: 0 0 0 5px;
+    width: calc(40% - 5px);
+}
+#form .content,
+#dados .content {
+    width: 100%;
+    margin: 0;
+}
+#form .content {
+    max-width: 600px;
+}
+#dados .content {
+    max-width: 400px;
+}
+#form form input::placeholder,
+#form form textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text);
+    opacity: 1; /* Firefox */
+  }
+  
+  #form form input:-ms-input-placeholder,
+  #form form textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--text);
+  }
+  
+  #form form input::-ms-input-placeholder,
+  #form form textarea::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text);
+  }
+#form form input,
+#form form textarea {
+    border: 2px solid #000;
+    border-bottom: 2px solid var(--main);
+    width: 100%;
+    background-color: #000;
+    padding: 10px 15px;
+    outline: none;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--text);
+}
+#form form input:hover,
+#form form input:focus {
+    outline: var(--main);
+    color: #fff;
+}
+#form form label {
+    color: var(--text);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+#form form h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+}
+#form form textarea {
+    height: 150px;
+    resize: none;
+}
+#form form input[type="submit"] {
+    background-color: #000;
+    width: 60px;
+    height: 60px;
+    border: none;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0;
+    border: 2px solid var(--main);
+    cursor: pointer;
+    margin-top: 10px;
+}
+#form form input[type="submit"]:hover {
+    background-color: var(--main);
+
+}
+#form {
+    text-align: center;
+}
+#faq {
+    background-color: black;
+    width: 100%;
+    margin-top: 10px;
+}
+#footer {
+    background-color: var(--main);
+    height: 65px;
+    width: 100%;
+}
+#dados .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text);
+}
+#dados #telefone, #dados #social {
+    width: 50%;
+    display: inline-block;
+}
+#dados h1 {
+    margin: 0px 0 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+}
+#dados p {
+    margin: 0;
+}
+#dados .line {
+    margin: 30px 0;
+}
+#faq h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 8px 0;
+
+}
+#footer .content {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    padding: 0;
+    height: 100%;
+}
+#footer .content img {
+    width: 85px;
+}
+
+#faq .subcontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0 10px 0;
+    width: calc(100% - 80px);
+    max-width: 900px;
+    margin: auto;
+
+}
+#faq .subcontent .col {
+    width: calc(50% - 20px);
+    min-width: 300px;
+}
+#faq .subcontent .col h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 8px 0;
+    text-align: left;
+}
+#faq .subcontent .col p {
+    color: var(--text);
+}
+
+@media only screen and (max-width: 1200px) {
+    .flip-box {
+        width: 250px;
+        height: 250px;
+    }
+    #photo {
+        height: 200px;
+    }
+    #footer .content {
+        padding: 0 30px;
+    }
+    #dados #telefone, #dados #social {
+        width: 100%;
+        display: inline-block;
+    }
+    #faq .content {
+        padding: 40px 20px;
+    }
+  }
+@media only screen and (max-width: 1120px) {
+    #funciona .item {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 965px) {
+    #funciona .item {
+        width: 180px;
+        height: 180px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .flip-box {
+        margin: 20px 0px;
+    }
+    h1 {
+        font-size: 30px;
+        margin: 0 20px;
+    }
+    .content {
+        padding: 40px 20px;
+    }
+    #navbar {
+        padding: 13px;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        height: 65px;
+        top: 0
+    }
+    #navbar .content {
+        padding-left: 10px;
+    }
+    #navbar #logo {
+        display: flex;
+        align-items: center;
+    }
+    #navbar #logo img {
+        width: 100px;
+        
+    }
+    #pag-1 h1,
+    #pag-2 h1,
+    #contato h1 {
+        margin: 10px auto 10px;
+        line-height: 30px;
+    }    
+    #pag-1 .balls {
+        width: 100%;
+        margin: 30px 0 0;
+    }
+    #ideal .ideal {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #ideal .ideal div {
+        width: 130px;
+    }
+    #photo {
+        display: none;
+    }
+    .produto .content {
+        display: block;
+    }    
+    .produto .content .text {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .produto .content .text h1 {
+        font-size: 22px;
+    }
+    .produto .content .icon {
+        margin: 10px 0 20px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .produto .content .icon img {
+        width: 200px;
+    }
+    #funciona div span {
+        width: 30px;
+        height: 30px;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0;
+        font-weight: 600;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+    #funciona .item {
+        width: 130px;
+        height: 130px;
+        font-size: 13px;
+        padding: 0 5px 10px;
+    }
+    #funciona .item span {
+        margin-bottom: 10px;
+    }
+    #funciona .content {
+        padding: 40px 20px;
+    }
+    #funciona p {
+        margin: 30px 0;
+    }
+    #rodape {
+        display: block;
+    }
+    #dados {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #form {
+        width: 100%;
+    }
+    #faq .subcontent {
+        margin: 0;
+        padding: 20px 10px 0;
+        width: 100%;
+    }
+    #faq .subcontent .col {
+        padding: 0;
+        min-width: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #footer {
+        height: auto;
+    }
+    #footer .content {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        font-size: 8px;
+    }
+    #footer .content img {
+        display: block;
+        margin: 20px auto 0;
+    }
+  }
