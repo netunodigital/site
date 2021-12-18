@@ -531,6 +531,13 @@ h1 {
     color: var(--text);
 }
 
+
+#cadastro {
+    margin-top: -100px;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
     .flip-box {
         width: 250px;
