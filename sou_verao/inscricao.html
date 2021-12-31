@@ -19,10 +19,21 @@
       #logo {
           width: 400px;
       }
+      .calendly-inline-widget {
+        margin-top: -30px;
+        height: calc(100vh + 30px);
+      }
+      @media (max-width: 700px)
+      { 
+      .calendly-inline-widget {
+        margin-top: 0px;
+        height:100vh;
+      }
+      }
   </style>
   <body>
 <!-- Widget em linha do Calendly - início -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/souverao?hide_landing_page_details=1&background_color=da0080&text_color=ffffff&primary_color=ffff00" style="min-width:320px;height:100vh; background: transparent;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/souverao?hide_landing_page_details=1&background_color=da0080&text_color=ffffff&primary_color=ffff00" style="min-width:320px; background: transparent;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Widget em linha do Calendly - fim -->
   </body>
