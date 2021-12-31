@@ -14,9 +14,8 @@ body {
     margin: 0;
     font-family: Gilroy-Light;
     height: 100vh;
-    position: relative;
+    overflow: hidden;
     background-image: url("bg.svg");
-    height: calc(auto - 250px);
 }
 h1 {
     color: #fff;
@@ -106,4 +105,82 @@ h1 {
 .box .row a:hover {
     color: #da0080;
     cursor: pointer;
+}
+
+
+@media (max-width: 1200px)
+{
+    #canva-1
+     {
+      top: -300px;
+      right: -300px;
+     }
+     #canva-2
+      {
+       bottom: -300px;
+       left: -300px;
+      }
+}
+@media (max-width: 1000px)
+{
+    #canva-1
+     {
+      top: -350px;
+      right: -350px;
+     }
+     #canva-2
+      {
+       bottom: -350px;
+       left: -350px;
+      }
+}
+@media (max-width: 800px)
+{
+   body {
+       overflow: auto;
+       height: auto;
+   }
+   .canva {
+       display: none;
+   }
+   .box {
+       border-radius: 0;
+   }
+}@media (max-width: 700px)
+{
+   body {
+       overflow: auto;
+       height: auto;
+   }
+   .canva {
+       display: none;
+   }
+   .box {
+       border-radius: 0;
+       padding: 30px;
+   }
+   #logo {
+       width: 200px;
+   }
+   .row {
+       flex-wrap: wrap;
+       padding: 0 60px;
+   }
+   h1 {
+       font-size: 25px;
+       margin: 0 50px;
+    margin-top: 30px;
+   }
+   .box .row {
+       text-align: center;
+       margin: 0px;
+       padding: 0;
+       justify-content: center;
+   }
+   .box .row * {
+       margin: 0;
+   }
+   .box .row .btn {
+       margin-top: 20px;
+   }
 }
