@@ -1,309 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Netuno - Seu site feito a mão</title>
+    <title>Inscrições Sou Verão</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/c778252024.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/scrollreveal"></script>
-    <script src="parallax.js-1.5.0/parallax.js"></script>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0S5QPPJC73"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    gtag('config', 'G-0S5QPPJC73');
-  </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_ak1JCB9P94UzKrEa3gIPT');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_qfny2zg', 'template_cefn15h', this)
-                    .then(function() {
-                        $('#success').show();
-                    }, function(error) {
-                        $('#success').hide();
-                    });
-            });
-        }
-    </script>
   </head>
   <body>
-      <div id="navbar">
-          <div class="content">
-          <div id="logo">
-              <img src="img/logo2.png" />
+      <div class="canva" id="canva-1"></div>
+      <div class="canva" id="canva-2"></div>
+      <div id="container">
+          <div class="row">
+            <img src="souverao_branco.svg" id="logo" />
+            <img src="correio.svg" id="logo" style="margin-top: 20px;" />
           </div>
-          <div id="menu">
-            <span onclick="goTo('#pag-2');">Produto</span>
-            <span onclick="goTo('#contato');">Contato</span>
-            <span onclick="javascript:location.href='http://www.instgram.com/netuno.digital'" id="insta" style="margin-left: 20px;"><i class="fab fa-instagram fa-1g"></i></span>
+          <h1>Vem praticar esporte com a gente!</h1>
+          <div class="box">
+            <h2>Inscrições</h2>
+            <p>
+              Escolha o esporte e o horário que você vai praticar 
+            </p>
+            <div class="row">
+              <span>Leia os</span><a>termos e condições</a>
+              <a href="inscricao.html" style="text-decoration: none;"><div class="btn">
+              Clique aqui
+              </div></a>
+            </div>
           </div>
-        </div>
       </div>
-      <section id="home">
-          <div class="content">
-              <h1>O SEU SITE FEITO A MÃO</h1>
-              <div class="line" style="background-color: #fff; width: 200px;"></div>
-              <div class="welcome">
-                  <p>Não apenas criamos seu site, proporcionamos uma experiência de outro planeta para seus clientes. Que tal embarcar nessa viagem com a gente?</p>
-              </div>
-              <div class="line" style="background-color: #fff; width: 200px;"></div>
-              <div class="btn-home"  onclick="goTo('#contato');">
-                  <div class="ball"><span>></span></div> <span>entre em contato</span>
-              </div>
-          </div>
-      </section>
-      <section id="pag-1">
-          <div class="content">
-                <div class="line" style="background-color: var(--main);"></div>
-                <h1>o que faz um site feito a mão ser melhor</h1>
-                <div class="line" style="background-color: var(--main);"></div>
-                <div class="balls">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front">
-                            <div class="line" style="background-color: #fff; width: 80px;"></div>
-                            <h2>Personalizado</h2>
-                            <div class="line" style="background-color: #fff; width: 80px;"></div>
-                          </div>
-                          <div class="flip-box-back">
-                            <h2>Um planeta pode ser de água ou ar. Grande ou pequeno. Seu site também merece ser único e exclusivo.</h2>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flip-box">
-                          <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div class="flip-box-front">
-                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
-                                  <h2>Adaptável</h2>
-                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
-                                  </div>
-                            </div>
-                            <div class="flip-box-back">
-                              <h2>Existem planetas em várias galáxias. Seu site pode se adaptar a smartphones e tablets.</h2>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                              <div class="flip-box-front">
-                                <div class="flip-box-front">
-                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
-                                  <h2>Rápido</h2>
-                                  <div class="line" style="background-color: #fff; width: 80px;"></div>
-                                  </div>
-                              </div>
-                              <div class="flip-box-back">
-                                <h2>Netuno gira em torno do Sol a 5.430m/s. Seu site deve carregar em segundos para ser efetivo.</h2>
-                              </div>
-                            </div>
-                          </div>
-                </div>
-          </div>
-      </section>
-      <section id="ideal">
-          <div class="content">
-        <div class="line" style="background-color: #fff; width: 80px;"></div>
-          <h1>IDEAL PARA</h1>
-          <div class="line" style="background-color: #fff; width: 80px;"></div>
-          <div class="ideal">
-              <div class="item"><span></span>start-ups</div>
-              <div class="item"><span></span>negócios</div>
-              <div class="item"><span></span>restaurantes</div>
-              <div class="item"><span></span>lojas</div>
-              <div class="item"><span></span>autônomos</div>
-              <div class="item"><span></span>academias</div>
-          </div>
-        </div>
-      </section>
-      <section id="pag-2">
-          <div class="content">
-                <div class="line" style="background-color: var(--main);"></div>
-                <h1>tudo o que seu site pode ser</h1>
-                <div class="line" style="background-color: var(--main);"></div>
-          </div>
-      </section>
-      <section id="responsivo" class="produto">
-          <div class="content">
-            <div class="icon">
-              <img src="img/site-responsivo.png" />
-            </div>
-            <div class="text">
-              <h1>Site responsivo</h1>
-              <p>Sabe aquele site que você abre quando está na fila do banco? Ele te deixa mais nervoso do que a fila? Esqueça isso. Garanta um site completamente adaptável para tablets e smartphones. Tenha a melhor experiência em qualquer tela.</p>
-              <div>
-                <span style="background-color: var(--main);"></span> 
-                <span style="background-color: #7e7e7e"></span> 
-                <span style="background-color: #7e7e7e"></span> 
-                <span style="background-color: #7e7e7e"></span> 
-              </div>            
-            </div>
-          </div>
-      </section>
-      <section id="redes" class="produto">
-          <div class="content">
-            <div class="icon">
-              <img src="img/redes.png" />
-            </div>
-            <div class="text">
-              <h1>Integrado com as redes sociais</h1>
-              <p>A aba do seu Facebook está aberta? É, hoje em dia não tem como fugir das redes sociais. Garanta integração com as principais redes sociais usadas pelo seu negócio.</p>
-              <div>
-                <span style="background-color: var(--main);"></span> 
-                <span style="background-color: var(--main);"></span> 
-                <span style="background-color: #7e7e7e"></span> 
-                <span style="background-color: #7e7e7e"></span>  
-              </div>            
-            </div>
-          </div>
-      </section>
-      <section id="analise" class="produto">
-          <div class="content">
-            <div class="icon">
-              <img src="img/analise.png" />
-            </div>
-            <div class="text">
-              <h1>Ferramenta de análise</h1>
-              <p>Seu site está pronto. E agora, o que você faz? Começa a divulgar em qualquer lugar? Quer saber em que lugar a divulgação é mais efetiva? Com o Google Analytics isso é possível. Relatórios completos de acesso ao seu site.</p>
-              <div>
-                <span style="background-color: var(--main);"></span> 
-                <span style="background-color: var(--main);"></span> 
-                <span style="background-color: var(--main);"></span> 
-                <span style="background-color: #7e7e7e"></span> 
-              </div>            
-            </div>
-          </div>
-      </section>
-      <section id="cms" class="produto">
-          <div class="content">
-            <div class="icon">
-              <img src="img/cms.png" />
-            </div>
-            <div class="text">
-              <h1>Sistema administrativo integrado (CMS)</h1>
-              <p>Os dias passam cada vez mais rápidos e a sua empresa já possui um serviço/produto novo. Com um CMS você pode adicionar/modificar fotos, textos e outros conteúdos, sem necessitar de alguém especializado. É como adicionar uma foto no Facebook.</p>
-              <div>
-                <span style="background-color: var(--main);"></span>
-                <span style="background-color: var(--main);"></span>
-                <span style="background-color: var(--main);"></span>
-                <span style="background-color: var(--main);"></span>
-              </div>            
-            </div>
-          </div>
-      </section>
-      <section id="funciona">
-        <div class="content">
-        <div class="line" style="background-color: #fff; width: 80px;"></div>
-        <h1>COMO FUNCIONA</h1>
-        <div class="line" style="background-color: #fff; width: 80px;"></div>
-        <p>O site feito a mão é construído totalmente do zero. Permite total personalização do seu site. Perfeito para quem precisa de exclusividade.</p>
-        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-          <div class="item"><span>1</span>
-          Levantamento das informações</div>
-        <div class="item"><span>2</span>
-          Criação da estrutura do site</div>
-        <div class="item"><span>3</span>
-          Desenvolvimento do layout</div>
-          <div class="item"><span>4</span>
-            Programação do site</div>
-            <div class="item"><span>5</span>
-              Implementação</div>
-          </div>
-          </div>
-        </section>
-      <section id="photo">
-        <div class="content"></div>
-      </section>
-      <section id="contato">
-          <div class="content">
-                <div class="line" style="background-color: var(--main);"></div>
-                <h1>comece seu projeto com a gente</h1>
-                <div class="line" style="background-color: var(--main);"></div>
-                <div style="display: flex;">
-          </div>
-      </section>
-      <section id="rodape">
-        <div id="form">
-          <div class="content">
-            <form id="contact-form" method="POST">
-              <h1>Orçamento</h1><br>
-              <input type="hidden" name="contact_number">
-              <input type="text" name="nome" placeholder="Nome" required /><br>
-              <input type="text" name="email" placeholder="E-mail" required /><br>
-              <textarea name="projeto" required placeholder="Fale um pouco sobre seu projeto" rows="4" cols="50"></textarea>
-              <input type="submit" value="Enviar" /><br
-              >
-              <span id="success" style="color: lime; display: none;">Mensagem enviada!</span>
-              <span id="failed" style="color: red; display: none;">Algo deu errado. Entre em contato enviando uma mensagem para contato@netuno.digital</span>
-            </form>
-          </div>
-        </div>
-        <div id="dados">
-          <div class="content">
-            <div id="telefone">
-              <h1>Dados</h1>
-              <p>contato@netuno.digital
-                <br>(21) 97900-0653</p>
-            </div>
-            <div id="social">
-              <div class="line" style="background-color: var(--main); width: 100%;"></div>
-              <h1>Redes Sociais</h1>
-              <p>Instagram
-                <br>@netuno.digital</p>
-                <div class="line" style="background-color: var(--main); width: 100%;"></div>
-              <p>Rio de Janeiro, Brasil</p>  
-            </div>
-          </div>
-        </div>
-        <div id="faq">
-          <div class="content">
-        <div class="line" style="background-color: #fff; width: 80px;"></div>
-          <h1>PERGUNTAS FREQUENTES</h1>
-          <div class="line" style="background-color: #fff; width: 80px;"></div>
-          <div class="subcontent">
-            <div class="col">
-              <h1>Vocês também criam logo?</h1>
-              <p>Sim, porém é um serviço a parte. Fechando o site feito a mão, você ganha um bom desconto na criação de identidade visual.</p>
-              <br>
-              <h1>Vocês prestam um bom serviço?</h1>
-              <p>Nosso foco é totalmente no cliente, estamos a disposição a qualquer momento que você precisa.</p>
-            </div>
-            <div class="col">
-              <h1>Em quanto tempo meu site fica pronto?</h1>
-              <p>Geralmente o site está no ar em até 3 meses, mas irá depender do tamanho e funcionalidades implementadas.</p>
-              <br><h1>Com tantas ofertas, por que a da Netuno é diferente?</h1>
-              <p>A diferença é que eu não somos apenas designers ou desenvolvedores. Além dessas habilidades, somos antes de tudo empreendedores, e sempre olhamos para um site como uma oportunidade de alavancar um negócio.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div id="footer">
-          <div class="content"><span>netuno.digital © 2021. Alguns direitos reservados.</span><img src="img/logo3.png" /></div>
-        </div>
-      </section>
-      <script>
-        function goTo(element) {
-          var target_offset = $(element).offset();
-          var target_top = target_offset.top - 65;
-          $('html, body').animate({ scrollTop: target_top }, 2000);
-        };
-      </script>
   </body>
-
 </html>
