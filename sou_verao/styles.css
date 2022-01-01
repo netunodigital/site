@@ -72,8 +72,8 @@ h1 {
     font-size: large;
 }
 .box .btn {
-    background-color: #000;
-    color: #fff;
+    background-color: yellow;
+    color: #000;
     padding: 15px 20px;
     font-size: 18px;
     display: flex;
@@ -88,8 +88,8 @@ h1 {
     font-weight: bold;
 }
 .box .btn:hover {
-    background-color: yellow !important;
-    color: #000;
+    background-color: #da0080 !important;
+    color: #fff;
 }
 .box .row {
     justify-content: flex-end;
