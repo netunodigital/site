@@ -191,6 +191,10 @@ h1 {
        margin: 0;
    }
    .box .row .btn {
-       margin-top: 20px;
+       width: calc(100%);
+   }
+   .box a:nth-child(3) { 
+    margin-top: 20px;
+       width: calc(100%);
    }
 }
