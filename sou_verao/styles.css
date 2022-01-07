@@ -9,7 +9,7 @@
 * {
     box-sizing: border-box;
 }
-html, body {
+.overflow-hidden {
     overflow: hidden;
 }
 body {

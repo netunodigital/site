@@ -18,8 +18,9 @@
           <h1>Vem praticar esporte com a gente!</h1>
           <div class="box">
             <h2>Inscrições</h2>
-            <p>
-              Escolha o esporte e o horário que você vai praticar 
+            <p style="text-align: justify;">
+              O projeto Sou Verão do Correio leva ao público esportes muito praticados no verão da cidade. Convidamos o público para experimentar gratuitamente diferentes modalidades de esportes à beira-mar: Beach Tennis, Canoa Havaiana, Cross Training, Futemesa, Yoga e Slackline. 
+              <br><br>Escolha aqui o esporte e o horário que você vai praticar
             </p>
             <div class="row">
               <span>Leia os</span><a href="#" id="termos">termos e condições</a>
@@ -38,7 +39,7 @@
               <p><b>2.</b> Reconhece expressamente o (a) Autorizador(a) que o Correio, na qualidade de detentor dos direitos patrimoniais de autor sobre a Obra e tendo em vista a autorização efetuada neste Termo, poderá, a seu exclusivo critério, utilizar a Obra livremente, bem como seus extratos trechos ou partes, podendo, exemplificativamente, adaptá-la para fins de produção de obras audiovisuais novas, obras audiovisuais para fins de exibição em e/ou peças publicitárias, utilizá-la, bem como a imagem e voz do(a) Autorizador (a) para produção de matéria promocional em qualquer tipo de mídia, inclusive impressa seja para fins de divulgação da Obra, para a composição de qualquer produto ligado à mesma, assim como produção do “making of” da Obra; ou armazená-la em banco de dados, exibi-la através de projeção em tela, transmiti-la via rádio e/ou televisão de qualquer espécie (televisão aberta ou televisão por assinatura, através de todas as formas de transporte de sinal existentes, independentemente das características e atributos do sistema de distribuição, abrangendo plataformas analógicas ou digitais, com atributos de interatividade, ou não), bem como divulgar  evento em mídias impressas, eletrônicas e digitais nos veículos da Rede Bahia, bem como transmissão/hospedagem nos canais das marcas parceiras, apoiadoras e patrocinadoras do Sou Verão, promover ações de merchandising ou veicular propaganda, bem como desenvolver qualquer atividade de licenciamento de produtos e/ou serviços derivados da Obra, disseminá-la através da Internet, ceder os direitos autorais sobre a Obra ou sobre as imagens cuja utilização foi autorizada através deste Termo a terceiros, para qualquer espécie de utilização, produzir novas obras audiovisuais (“remakes”), utilizar trechos ou extratos da mesma ou, ainda, dar-lhe qualquer outra utilização que proporcione ao Correio alguma espécie de vantagem econômica.
                 <br><br> <b>2.1 -</b> Nenhuma das utilizações previstas no caput desta Cláusula, ou ainda qualquer outra que pretenda o Correio dar à Obra e/ou às imagens cuja utilização foi autorizada através deste Termo, têm limitação de tempo ou de número de vezes, podendo ocorrer no Brasil e/ou no exterior, sem que seja devida ao Autorizador(a) qualquer remuneração.
                 <br><br> <b>2.2 -</b> As receitas obtidas pelo Correio com toda e qualquer modalidade de patrocínio, publicidade, merchandising, licenciamento, sub-produtos, e comercialização do Sou Verão 2022 serão revertidas integralmente ao Correio, não cabendo ao Autorizador(a) qualquer direito ou remuneração pela sua imagem e voz na forma ora autorizada.</p>
-              <p><b>3.</b>> Os dados pessoais coletados, incluindo voz e imagem, serão utilizados único e exclusivamente para fins jornalísticos ou artísticos pelo Correio não sendo realizados outros tratamentos sem o prévio conhecimento do titular do dado e, se necessário, sem que ocorra a coleta do respectivo consentimento.</p>
+              <p><b>3.</b> Os dados pessoais coletados, incluindo voz e imagem, serão utilizados único e exclusivamente para fins jornalísticos ou artísticos pelo Correio não sendo realizados outros tratamentos sem o prévio conhecimento do titular do dado e, se necessário, sem que ocorra a coleta do respectivo consentimento.</p>
               <p><b>4.</b> Declaro também, que li e concordo com todas as instruções de segurança para a prática esportiva, e pelo presente instrumento, fico ciente que das atividades a serem desenvolvidas no Sou Verão 2022, eventualmente, face a natureza dos esportes, poderão resultar em lesões e/ou ferimentos. Pelo presente instrumento ainda, assumo toda a responsabilidade por eventual lesão que vier a sofrer, desde já eximindo o Correio de qualquer responsabilidade civil ou penal.</p>
               <p><b>5.</b> presente instrumento é firmado em caráter irrevogável e irretratável obrigando-se as partes por si, seus herdeiros e sucessores a qualquer título, ficando eleito o foro da Comarca de Salvador –Bahia para dirimir quaisquer dúvidas oriundas deste Termo.</p>
             </div>
@@ -48,9 +49,11 @@
       <script type='text/javascript'>
         $('#termos').click(function() {
           $('.overlay').show();
+          $('body, html').addClass('overflow-hidden');
         });
         $('.close').click(function() {
           $('.overlay').hide();
+          $('body, html').removeClass('overflow-hidden');
         });
       </script>
     </body>
